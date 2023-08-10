@@ -1,1 +1,1 @@
-src/App.tsx
+Open `src/App.tsx` in  VSCode
