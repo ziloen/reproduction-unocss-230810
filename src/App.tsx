@@ -1,23 +1,30 @@
+import { PropsWithChildren, useState } from 'react'
 
-
-
-function AnyComponent({ text }: {
-  text?: string,
-  disabled?: boolean,
-}) {
-  return (
-    <div>
-      <div>{text}</div>
-      <p className="text-amber-8">Content</p>
-    </div>
-  )
+function AnyCompnentOrTag(props: PropsWithChildren) {
+  return <div className='text-amber-8 p-10'></div>
 }
 
 function App() {
+  const [open, setOpen] = useState(false)
+
   return (
-    <div >
-      <AnyComponent />
-    </div>
+    <AnyCompnentOrTag
+      
+   // ^ ctrl + space here
+    >
+      <div
+        className=''
+        
+     // ^ ctrl + space here, no autocomplete, this is fine
+      >
+        <div
+          style={{}}
+          
+       // ^ ctrl + space here
+        >
+        </div>
+      </div>
+    </AnyCompnentOrTag>
   )
 }
 
