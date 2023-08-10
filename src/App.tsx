@@ -13,6 +13,8 @@ function App() {
    // ^ ctrl + space here
     >
       <div
+        
+     // ^ ctrl + space here
         className=''
         
      // ^ ctrl + space here, no autocomplete, this is fine
